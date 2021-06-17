@@ -21,6 +21,6 @@ app.get('/login', (req, res) => {
     res.render('login');
 });
 
-app.listen(3000, '192.168.43.4', () => {
+app.listen(3000 || process.env.PORT, () => {
     console.info('app started at port:3000');
 });
