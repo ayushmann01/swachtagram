@@ -51,7 +51,7 @@ body {
   } 
 
   .posts-container {
-    margin-left: 0px;
+    margin-left: 20px;
     width: fit-content;
     display: inline-block;
     overflow-y: scroll;
