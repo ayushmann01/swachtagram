@@ -10,15 +10,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/profile', (req, res) => {
-    res.render('profile');
+    res.render('login');
 });
 
 app.get('/about', (req, res) => {
     res.render('about');
-});
-
-app.get('/login', (req, res) => {
-    res.render('login');
 });
 
 app.listen(process.env.PORT || 3000, () => {
