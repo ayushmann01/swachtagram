@@ -9,10 +9,18 @@ app.get('/', (req, res) => {
     res.render('home');
 });
 
-app.get('/posts', (req, res) => {
-    res.render('posts');
+app.get('/profile', (req, res) => {
+    res.render('profile');
 });
 
-app.listen(3000, () => {
+app.get('/about', (req, res) => {
+    res.render('about');
+});
+
+app.get('/login', (req, res) => {
+    res.render('login');
+});
+
+app.listen(3000, '192.168.43.4', () => {
     console.info('app started at port:3000');
 });

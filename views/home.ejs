@@ -1,15 +1,63 @@
-<%- include('partials/header') %>
+<%- include('partials/header') %> 
 
+<div class="posts-container">
+        <div class="post">
+                <div class="icons" >Narendra Modi</div>
+                <img src="http://governancenow.com/temp/swachh_bharat_signature.jpg" alt=""> 
+            <div class="icons">
+                <i class="far fa-heart fa-lg">10likes</i>
+                <i class="far fa-comment fa-lg" style="padding-left: 10px;">5comments</i>
+                <p>captions</p>
+            </div>
+        </div>
+        <div class="post">
+            <div class="icons">XyZ School</div>
+            <img src="https://www.sjcsvijaynagarmysuru.in/wp-content/uploads/2019/11/2-4-1024x576.jpg" alt="">
+            <div class="icons">
+                <i class="far fa-heart fa-lg">10likes</i>
+                <i class="far fa-comment fa-lg" style="padding-left: 10px;">5comments</i>
+                <p>Caption</p>
+            </div>
+        </div>
+        <div class="post">
+            <div class="icons">XyZ School</div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn2lYQCsATUDiwapHPQIyH_DBOHm0fu0AMpw&usqp=CAU" alt="">
+            <div class="icons">
+                <i class="far fa-heart fa-lg">5likes</i>
+                <i class="far fa-comment fa-lg" style="padding-left: 10px;">4comments</i>
+                <p>Caption</p>
+            </div>
+        </div>
+    </div>
 
-<div class="jumbotron centered">
-  <div class="container">
-    <img src="https://cdn.cdnparenting.com/articles/2019/02/14193616/1181338459-H.jpg" alt="">
-    <h1 class="display-3">Swach Bharat Abhiyaan</h1>
-    <p class="lead">✌Swach Bharat Swasth Bharat✌</p>
-    <hr>
-    <a class="btn btn-light btn-lg" href="/register" role="button">Register</a>
-    <a class="btn btn-dark btn-lg" href="/login" role="button">Login</a>
-  </div>
-</div>
+    <div class="side-container">
+        <div>
+            <h3>Your Score: 70</h3> <button style="border-radius: 4px; background-color: white;"><i class="fas fa-plus"></i></button>
+        </div>
+
+        <div class="leaderboard" style="padding: 2px; margin-top: 100px;">
+            <h2 style="color: #000080;">Weekly Leaderboard</h2>
+             <table style="color: #000080; margin: auto;">
+                <thead>
+                    <tr>
+                        <td>Rank</td>
+                        <td>Name</td>
+                        <td>Rank</td>
+                    </tr>
+                </thead>
+                 <tbody>
+                     <tr><td>1.</td> <td>Ramesh</td> <td>90</td></tr>
+                     <tr> <td>2.</td> <td>Trisha</td> <td>89</td></tr>
+                     <tr> <td>3.</td> <td>Deepak</td> <td>85</td></tr>
+                     <tr> <td>4.</td> <td>Amir</td> <td>80</td></tr>
+                 </tbody>
+             </table>
+        </div>
+
+        <div class="slogans" style="margin-top: 100px;">
+            <h5>Slogans</h5>
+            <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+        </div>
+    </div>
 
 <%- include('partials/footer') %>
