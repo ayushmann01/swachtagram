@@ -102,7 +102,7 @@ app.get('/home', (req, res) => {
 
 app.get('/profile', (req, res) => {
     if (req.isAuthenticated()) res.render('profile');
-    else res.redirect('login');
+    else res.redirect('/');
 });
 
 app.get('/about', (req, res) => {
