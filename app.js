@@ -101,7 +101,7 @@ app.get('/home', (req, res) => {
 });
 
 app.get('/profile', (req, res) => {
-    if (req.isAuthenticated) res.render('profile');
+    if (req.isAuthenticated()) res.render('profile');
     else req.redirect('login');
 });
 
