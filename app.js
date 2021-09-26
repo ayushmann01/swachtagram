@@ -59,7 +59,7 @@ const postSchema = new mongoose.Schema({
 
 const scoreSchema = new mongoose.Schema({
   user: String,
-  score: Integer,
+  score: Number,
 });
 
 const User = new mongoose.model("user", userSchema);
@@ -101,7 +101,8 @@ app.get('/home', (req, res) => {
 });
 
 app.get('/profile', (req, res) => {
-    res.render('profile');
+    if (req.isAuthenticated) res.render('profile');
+    else req.redirect('login');
 });
 
 app.get('/about', (req, res) => {
