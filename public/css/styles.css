@@ -64,6 +64,12 @@ body {
   }
    */
 
+   .upload-posts {
+    float: left;
+    margin-left: 10%;
+    height: 100%;
+   }
+
   .icons {
     border:1px solid black;
     padding: 5px;

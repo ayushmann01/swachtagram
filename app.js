@@ -57,8 +57,14 @@ const postSchema = new mongoose.Schema({
     }
 });
 
+const scoreSchema = new mongoose.Schema({
+  user: String,
+  score: Integer,
+});
+
 const User = new mongoose.model("user", userSchema);
 const Post = new mongoose.model('post', postSchema);
+const Score = new mongoose.model('score', scoreSchema);
 
 passport.use(User.createStrategy());
 passport.serializeUser(User.serializeUser());
@@ -113,7 +119,7 @@ app.get("/register", (req, res) => {
 app.post('/', upload.single('image'), (req, res, next) => {
  
     var obj = {
-        user: "abcd",
+        user: req.user.username,
         desc: req.body.desc,
         img: {
             data: fs.readFileSync(path.join(__dirname + '/uploads/' + req.file.filename)),

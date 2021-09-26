@@ -5,42 +5,34 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div> -->
 
-<h1>To Upload Image on mongoDB</h1>
-<hr>
-<div>
+<h1 style="margin-left: 10%;">Your POST</h1> <br>
+<div class="upload-posts">
     <form action="/" method="POST" enctype="multipart/form-data">
-        <div>
-            <label for="name">Image Title</label>
-            <input type="text" id="name" placeholder="Name"
-                   value="" name="name" required>
-        </div>
-        <div>
-            <label for="desc">Image Description</label>
-            <textarea id="desc" name="desc" value="" rows="2"
-                      placeholder="Description" required>
-            </textarea>
-        </div>
         <div>
             <label for="image">Upload Image</label>
             <input type="file" id="image"
                    name="image" value="" required>
         </div>
         <div>
-            <button type="submit">Submit</button>
+            <label for="desc">Image Description</label>
+            <textarea id="desc" name="desc" value="" rows="4"
+                      placeholder="Description" required>
+            </textarea>
+        </div>
+        <div>
+            <button class="btn-primary" style="width: 40%; height: 20%; margin-left: 20%;" type="submit">Post <i class="fas fa-plus"></i></button>
         </div>
     </form>
 </div>
-
-<hr>
 
 
 
 <div class="side-container">
     <div>
-        <h3>Your Score: 70</h3> <button style="border-radius: 4px; background-color: white;"><i class="fas fa-plus"></i></button>
+        <h3>Your Score: 70</h3> <button style="border-radius: 4px; background-color: white;"></button>
     </div>
 
-    <div class="leaderboard" style="padding: 2px; margin-top: 100px;">
+    <div class="leaderboard" style="padding: 2px;">
         <h2 style="color: #000080;">Weekly Leaderboard</h2>
          <table style="color: #000080; margin: auto;">
             <thead>
@@ -59,7 +51,7 @@
          </table>
     </div>
 
-    <div class="slogans" style="margin-top: 100px;">
+    <div class="slogans">
         <h5>Slogans</h5>
         <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
     </div>
@@ -71,4 +63,4 @@
     <i class="fab fa-facebook-square fa-lg" style="color: #000080; margin-left: 7px;"></i>
     <i class="far fa-envelope fa-lg" style="color: #000080; margin-left: 7px;"></i>
  </div>
- 
+ <!-- <%- include('partials/footer') %>  -->
