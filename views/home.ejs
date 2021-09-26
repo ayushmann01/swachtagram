@@ -1,16 +1,22 @@
 <%- include('partials/header') %> 
 
 <div class="posts-container">
-        <div class="post">
-                <div class="icons" >Narendra Modi</div>
-                <img src="http://governancenow.com/temp/swachh_bharat_signature.jpg" alt=""> 
+    
+    <% items.forEach(image => { %>
+    <div class="post">
+            <div class="icons" ><%= image.user %> </div>
+                <img src="data:image/<%=image.img.contentType%>;base64,
+                <%=image.img.data.toString('base64')%>" alt=""> 
             <div class="icons">
                 <i class="far fa-heart fa-lg">10likes</i>
                 <i class="far fa-comment fa-lg" style="padding-left: 10px;">5comments</i>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Parturient montes nascetur ridiculus mus. Sociis natoque penatibus et magnis dis parturient. </p>
+                <p> <%= image.desc %> </p>
             </div>
         </div>
-        <div class="post">
+    <% });  %> 
+</div>
+
+        <!-- <div class="post">
             <div class="icons">XyZ School</div>
             <img src="https://www.sjcsvijaynagarmysuru.in/wp-content/uploads/2019/11/2-4-1024x576.jpg" alt="">
             <div class="icons">
@@ -27,37 +33,7 @@
                 <i class="far fa-comment fa-lg" style="padding-left: 10px;">4comments</i>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Parturient montes nascetur ridiculus mus. Sociis natoque penatibus et magnis dis parturient. </p>
             </div>
-        </div>
-    </div>
-
-    <div class="side-container">
-        <div>
-            <h3>Your Score: 70</h3> <button style="border-radius: 4px; background-color: white;"><i class="fas fa-plus"></i></button>
-        </div>
-
-        <div class="leaderboard" style="padding: 2px; margin-top: 100px;">
-            <h2 style="color: #000080;">Weekly Leaderboard</h2>
-             <table style="color: #000080; margin: auto;">
-                <thead>
-                    <tr>
-                        <td>Rank</td>
-                        <td>Name</td>
-                        <td>Rank</td>
-                    </tr>
-                </thead>
-                 <tbody>
-                     <tr><td>1.</td> <td>Ramesh</td> <td>90</td></tr>
-                     <tr> <td>2.</td> <td>Trisha</td> <td>89</td></tr>
-                     <tr> <td>3.</td> <td>Deepak</td> <td>85</td></tr>
-                     <tr> <td>4.</td> <td>Amir</td> <td>80</td></tr>
-                 </tbody>
-             </table>
-        </div>
-
-        <div class="slogans" style="margin-top: 100px;">
-            <h5>Slogans</h5>
-            <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
-        </div>
-    </div>
+        </div> -->
+    
 
 <%- include('partials/footer') %>

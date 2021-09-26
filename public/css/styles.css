@@ -51,17 +51,18 @@ body {
   } 
 
   .posts-container {
-    margin-left: 20px;
-    width: fit-content;
-    display: inline-block;
-    overflow-y: scroll;
+    margin: auto ;
+    width: 50%;
+    display: block;
+    padding: 5px;
     height: 100%;
   }
 
+  /* 
   .posts-container::-webkit-scrollbar {
     display: none;
   }
-  
+   */
 
   .icons {
     border:1px solid black;
